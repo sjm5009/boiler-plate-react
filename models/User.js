@@ -29,9 +29,8 @@ const userSchema = mongoose.Schema({
     tokenExp:{
         type: Number
     }
-
 })
 
-const model = mongoose.model('User', userSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = { User }
